@@ -40,3 +40,31 @@
 .about__description {
   margin-bottom: 2rem;
 }
+
+@media screen and (min-width: 1040px) {
+  .about__container {
+    column-gap: 6rem;
+    align-items: center;
+  }
+
+  .about__group,
+  .about__img {
+    width: 480px;
+  }
+
+  .about__card {
+    width: 198px;
+    padding: 1rem 1.25rem;
+  }
+
+  .about__description {
+    padding-right: 4rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .about__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

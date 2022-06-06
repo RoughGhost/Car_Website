@@ -123,3 +123,22 @@
     box-shadow: 0 0 24px hsl(158, 98%, 43%);
   }
 }
+
+@media screen and (min-width: 1040px) {
+  .home__container {
+    padding-top: 2rem;
+  }
+
+  .home__img {
+    width: 380px;
+  }
+
+  .home__car {
+    column-gap: 7rem;
+  }
+
+  .home__car-icon {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+}
