@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./About.css";
 import AboutImg from "../../assets/about.png";
 import Button from "../Button/Button";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
-    <div className="about section" id="about">
+    <div className="about section" id="about" data-aos="flip-up">
       <div className="about__container grid">
         <div className="about__group">
           <img src={AboutImg} alt="" className="about__img" />

@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Features.css";
 import FirstFeature from "../../assets/features.png";
 import Map from "../../assets/map.svg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Features = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
-    <div className="features section">
+    <div className="features section" data-aos="fade-up">
       <h2 className="section__title">More Features</h2>
       <div className="features__container container grid">
         <div className="features__group">

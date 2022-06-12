@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   RiFlashlightFill,
   RiTempColdLine,
@@ -7,10 +7,16 @@ import {
 } from "react-icons/ri";
 import HomeImg from "../../assets/home.png";
 import "./Home.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
-    <section className="home section" id="home">
+    <section className="home section" id="home" data-aos="fade-in">
       <div className="shape shape__big"></div>
       <div className="shape shape__small"></div>
       <div className="home__container container grid">
@@ -46,7 +52,7 @@ const Home = () => {
             <h3 className="home__car-name">BATTERY</h3>
           </div>
         </div>
-        <a href="#" className="home__button">
+        <a href="#blank" className="home__button">
           START
         </a>
       </div>

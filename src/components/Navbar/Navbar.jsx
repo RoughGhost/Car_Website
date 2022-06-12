@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { RiMenu3Line, RiCloseLine, RiSteeringLine } from "react-icons/ri";
-import { BsCardHeading } from "react-icons/bs";
+
 import "./Navbar.css";
-import logo from "../../assets/logo1.png";
 
 const Menu = () => (
   <>
